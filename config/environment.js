@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-firebase-chat-app',
+    podModulePrefix: 'pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
