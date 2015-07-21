@@ -5,8 +5,12 @@ module.exports = function(environment) {
     modulePrefix: 'ember-firebase-chat-app',
     podModulePrefix: 'pods',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
     baseURL: '/',
     locationType: 'auto',
+
+    firebase: 'https://ember-firebase-chat-app.firebaseio.com',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
