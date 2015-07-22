@@ -1,0 +1,32 @@
+{{#paper-nav-container}}
+  {{#paper-sidenav classNames="md-sidenav-left md-whiteframe-z2" flex-layout="column" flex=true}}
+    {{#paper-toolbar}}
+      <div class="md-toolbar-tools">
+        <h1>Emberfire</h1>
+      </div>
+    {{/paper-toolbar}}
+
+    {{#paper-content}}
+      {{#paper-list}}
+        {{#if session.isAuthenticated}}
+          {{#paper-item action='invalidateSession'}}Log Out{{/paper-item}}
+        {{else}}
+          {{#paper-item action='signup'}}Sign Up{{/paper-item}}
+          {{#paper-item action='login'}}Log In{{/paper-item}}
+        {{/if}}
+      {{/paper-list}}
+    {{/paper-content}}
+  {{/paper-sidenav}}
+
+  {{#paper-content}}
+    {{#paper-toolbar}}
+      <div class="md-toolbar-tools">
+        <h1>OMG!! Ember is on FIRE!!! ...base.</h1>
+      </div>
+    {{/paper-toolbar}}
+    {{#paper-button action='debug' raised=true}}Debug{{/paper-button}}
+
+    {{outlet}}
+    {{chat-form currentUser=currentUser}}
+  {{/paper-content}}
+{{/paper-nav-container}}
