@@ -3,13 +3,20 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-firebase-chat-app',
-    podModulePrefix: 'pods',
+    podModulePrefix: 'ember-firebase-chat-app/pods',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    contentSecurityPolicy: {
+      'connect-src': "'self' wss://*.firebaseio.com https://*.firebase.com",
+      'font-src': "'self' https://fonts.gstatic.com" 
+    },
+
     baseURL: '/',
     locationType: 'auto',
 
-    firebase: 'https://ember-firebase-chat-app.firebaseio.com',
+    firebase: 'https://ember-firebase-chat.firebaseio.com',
+    'simple-auth': {
+      serverTokenRevocationPoint: '/revoke'
+    },
 
     EmberENV: {
       FEATURES: {
