@@ -1,4 +1,4 @@
-import config from '../config/environment';
+import config from 'ember-firebase-chat-app/config/environment';
 import Firebase from 'firebase';
 import FirebaseAdapter from 'emberfire/adapters/firebase';
 
