@@ -1,0 +1,35 @@
+.chatform {
+  background-color: #fff;
+  box-shadow: 0 0 1px rgba(0,0,0,.1);
+
+  &-avatar {
+    margin: 8px 16px 8px 0;
+    @include avatar(40px);
+  }
+
+  &-avatar_placeholder {
+    background: #ccc;
+  }
+
+  &-prompt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    text-align: center;
+    background: transparentize(color('grey', '900'), .25);
+
+    > p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.75;
+      color: #fff;
+    }
+  }
+}

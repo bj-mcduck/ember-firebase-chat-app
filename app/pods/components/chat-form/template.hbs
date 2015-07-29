@@ -1,0 +1,14 @@
+<div layout='flex'>
+  <div class={{avatarClass}}><img src={{avatar}} /></div>
+  <div flex=1>{{paper-input label='Message' value=message textarea=true}}</div>
+  <div>{{#paper-button action='submit' raised=true classNames='md-primary'}}Send{{/paper-button}}</div>
+</div>
+
+{{#unless currentUser}}
+  <div class="chatform-prompt">
+    <p>
+      You're not currently logged in.<br />
+      Please {{#paper-button action='goTo' param='signup' raised=true}}Sign Up{{/paper-button}}, or {{#paper-button action='goTo' param='login' raised=true}}Log In{{/paper-button}}.
+    </p>
+  </div>
+{{/unless}}
