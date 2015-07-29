@@ -1,20 +1,19 @@
 import Ember from 'ember';
-var Controller = Ember.Controller;
-var computed = Ember.computed;
+const {Controller, computed} = Ember;
 
 export default Controller.extend({
   currentUser: computed('session.secure.uid', function(){
     var uid = this.get('session.secure.uid');
-    return this.store.findRecord('user', uid);
+    if (uid !== undefined) {
+      return this.store.findRecord('user', uid);
+    } else {
+      return null;
+    }
   }),
 
   actions: {
-    login(){
-      this.transitionToRoute('login');
-    },
-
-    signup(){
-      this.transitionToRoute('signup');
+    goTo(route){
+      this.transitionToRoute(route);
     }
   }
 });

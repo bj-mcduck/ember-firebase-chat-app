@@ -1,8 +1,8 @@
 {{#paper-nav-container}}
   {{#paper-sidenav classNames="md-sidenav-left md-whiteframe-z2" flex-layout="column" flex=true}}
     {{#paper-toolbar}}
-      <div class="md-toolbar-tools">
-        <h1>Emberfire</h1>
+      <div class="md-toolbar-tools" {{action 'goTo' 'index'}}>
+        <h1>EmberFire Chat</h1>
       </div>
     {{/paper-toolbar}}
 
@@ -12,8 +12,8 @@
         {{#if session.isAuthenticated}}
           {{#paper-item action='invalidateSession'}}Log Out{{/paper-item}}
         {{else}}
-          {{#paper-item action='signup'}}Sign Up{{/paper-item}}
-          {{#paper-item action='login'}}Log In{{/paper-item}}
+          {{#paper-item action='goTo' param='signup'}}Sign Up{{/paper-item}}
+          {{#paper-item action='goTo' param='login'}}Log In{{/paper-item}}
         {{/if}}
       {{/paper-list}}
     {{/paper-content}}
@@ -25,9 +25,7 @@
         <h1>OMG!! Ember is on FIRE!!! ...base.</h1>
       </div>
     {{/paper-toolbar}}
-    {{#paper-button action='debug' raised=true}}Debug{{/paper-button}}
 
     {{outlet}}
-    {{chat-form currentUser=currentUser}}
   {{/paper-content}}
 {{/paper-nav-container}}
