@@ -1,0 +1,17 @@
+$footer-height: 240px;
+
+.chatscreen {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 64px);
+
+  &-messages {
+    flex: 1 auto;
+    overflow: scroll;
+  }
+
+  &-form {
+    flex: 1 $footer-height;
+    position: relative;
+  }
+}

@@ -1,0 +1,8 @@
+body > .ember-view,
+md-nav-container {
+  height: 100vh;
+
+  > md-content {
+    flex: 1;
+  }
+}
