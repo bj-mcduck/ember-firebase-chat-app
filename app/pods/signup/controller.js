@@ -33,6 +33,9 @@ export default Ember.Controller.extend(
 
   actions: {
     signup(){
+      if (this.get('name') === undefined) {
+        return;
+      }
       var firebase = new Firebase(config.firebase);
       firebase.createUser(this.userValues(), function(error, userData){
         if (error) {
