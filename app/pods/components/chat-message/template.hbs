@@ -1,0 +1,10 @@
+{{#paper-card}}
+  {{#paper-card-content}}
+    <img src={{avatar}} class='chatmessage-avatar' />
+    <div class="chatmessage-message">
+      <div class="chatmessage-name">{{user.name}} said:</div>
+      {{message.content}}
+    </div>
+    {{#paper-button action='delete'}}X{{/paper-button}}
+  {{/paper-card-content}}
+{{/paper-card}}
