@@ -26,6 +26,10 @@
       </div>
     {{/paper-toolbar}}
 
+    {{#if showToast}}
+      {{paper-toast message=toastMessage on-close='closeToast' hide-delay=4000 button="close" right=true}}
+    {{/if}}
+
     {{outlet}}
   {{/paper-content}}
 {{/paper-nav-container}}
