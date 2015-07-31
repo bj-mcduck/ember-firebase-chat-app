@@ -1,6 +1,6 @@
-<div layout='flex'>
-  <div class={{avatarClass}}><img src={{avatar}} /></div>
-  <div flex=1>{{paper-input label='Message' value=message textarea=true}}</div>
+<div layout='flex' class='md-padding'>
+  <img src={{avatar}} class={{avatarClass}} />
+  <div flex=1>{{paper-input label='Message' value=message}}</div>
   <div>{{#paper-button action='submit' raised=true classNames='md-primary'}}Send{{/paper-button}}</div>
 </div>
 

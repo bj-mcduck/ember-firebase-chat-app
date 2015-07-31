@@ -1,7 +1,6 @@
 import Ember from 'ember';
-const Component = Ember.Component;
-const computed = Ember.computed;
-const alias = computed.alias;
+const {Component, computed} = Ember;
+const {alias} = computed;
 
 export default Component.extend({
   classNames: ['chatmessage'],
@@ -20,8 +19,6 @@ export default Component.extend({
 
   actions: {
     delete(){
-      console.log('delete');
-      console.log(this.get('message'));
       this.sendAction('delete', this.get('message'));
     }
   }

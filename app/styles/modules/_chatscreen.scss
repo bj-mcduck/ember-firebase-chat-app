@@ -1,9 +1,9 @@
-$footer-height: 240px;
+$footer-height: 109px;
 
 .chatscreen {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  max-height: calc(100vh - 64px);
 
   &-messages {
     flex: 1 auto;
@@ -11,7 +11,8 @@ $footer-height: 240px;
   }
 
   &-form {
-    flex: 1 $footer-height;
+    flex-basis: $footer-height;
+    min-height: $footer-height;
     position: relative;
   }
 }

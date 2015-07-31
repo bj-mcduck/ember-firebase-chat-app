@@ -2,9 +2,11 @@
   {{#paper-card-content}}
     <img src={{avatar}} class='chatmessage-avatar' />
     <div class="chatmessage-message">
-      <div class="chatmessage-name">{{user.name}} said:</div>
+      <div class="chatmessage-name">{{user.name}}:</div>
       {{message.content}}
     </div>
-    {{#paper-button action='delete'}}X{{/paper-button}}
+    {{#if isCurrentUser}}
+      {{#paper-button action='delete' icon-button=true classNames='chatmessage-remove'}}&times;{{/paper-button}}
+    {{/if}}
   {{/paper-card-content}}
 {{/paper-card}}

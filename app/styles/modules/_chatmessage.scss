@@ -1,4 +1,14 @@
 .chatmessage {
+  > .paper-card {
+    position: relative;
+  }
+
+  &.is-user {
+    > .paper-card {
+      background: $highlighted-color;
+    }
+  }
+
   &-avatar {
     @include avatar(40px);
     margin: 8px 16px 8px 0;
@@ -10,8 +20,10 @@
     opacity: .5;
   }
 
-  &-message {
-
+  &-remove {
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
 
   > .paper-card > .paper-card-content {
