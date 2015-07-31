@@ -9,6 +9,7 @@
     {{#paper-content}}
       {{#paper-list}}
           {{#paper-item action='goTo' param='chat'}}Chat{{/paper-item}}
+          {{#paper-item action='goTo' param='users'}}Users{{/paper-item}}
         {{#if session.isAuthenticated}}
           {{#paper-item action='invalidateSession'}}Log Out{{/paper-item}}
         {{else}}

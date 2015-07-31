@@ -1,0 +1,45 @@
+$userdisplay-size: 100px;
+
+.userdisplay {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+
+  &.is-online {
+    .userdisplay {
+      &-image {
+        opacity: 1;
+        border-color: darken($highlighted-color, 20%);
+      }
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    padding: 16px 0 64px;
+  }
+
+  &-title {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: color('grey', '700');
+  }
+
+  &-image {
+    height: $userdisplay-size;
+    width: $userdisplay-size;
+    margin: auto;
+    border-radius: 50%;
+    opacity: .5;
+    border: 8px solid color('grey', '500');
+  }
+
+  &-name {
+    margin-top: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: color('grey', '500');
+  }
+}
