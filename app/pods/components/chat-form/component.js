@@ -8,7 +8,7 @@ export default Component.extend({
 
   avatar: alias('currentUser.avatar'),
   currentUser: null,
-  message: null,
+  message: '',
 
   avatarClass: computed('avatar', function(){
     let className = 'chatform-avatar';
@@ -18,10 +18,27 @@ export default Component.extend({
     return className;
   }),
 
+  didInsertElement(){
+    this.$('input').on('keypress', function(e){
+      if (e.which === 13) {
+        this.submitMessage();
+      }
+    }.bind(this));
+  },
+
+  willDestroyElement(){
+    this.$('input').off();
+  },
+
+  submitMessage(){
+    let message = this.get('message');
+    this.set('message', '');
+    this.sendAction('submit', message);
+  },
+
   actions: {
     submit(){
-      this.sendAction('submit', this.get('message'));
-      this.set('message', null);
+      this.submitMessage();
     },
 
     goTo(route){
