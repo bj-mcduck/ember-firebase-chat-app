@@ -39,6 +39,6 @@
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
     "ember-paper": "^0.2.6",
-    "emberfire": "^1.5.0"
+    "emberfire": "1.4.7"
   }
 }

@@ -1,11 +1,7 @@
-{{#each model.users as |user|}}
-  Woot
-{{/each}}
 <div class="chatscreen">
   <div class="md-padding chatscreen-messages">
     {{#each model.messages as |message|}}
       {{chat-message message=message currentUser=currentUser delete='destroyMessage'}}
-      "{{message.user.name}}"
     {{else}}
       {{#paper-card}}
         {{#paper-card-content}}
