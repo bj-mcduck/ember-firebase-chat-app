@@ -3,6 +3,6 @@ const {Route} = Ember;
 
 export default Route.extend({
   model(){
-    return this.store.findAll('profile');
+    return this.store.findAll('user');
   }
 });
