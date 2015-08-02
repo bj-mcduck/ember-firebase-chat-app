@@ -1,6 +1,9 @@
 import Ember from 'ember';
 import config from 'ember-firebase-chat-app/config/environment';
-const {Controller, computed} = Ember;
+const {
+  Controller,
+  computed
+} = Ember;
 
 export default Controller.extend({
   currentUser: computed('session.secure.uid', function(){
@@ -8,7 +11,7 @@ export default Controller.extend({
     if (uid !== undefined) {
       this.setUpPresenceCheck(uid);
       this.toast("You've logged in.");
-      return this.store.find('profile', uid);
+      return this.store.findRecord('users', uid);
     } else {
       return null;
     }
@@ -18,11 +21,8 @@ export default Controller.extend({
     const isConnected = new Firebase(config.firebase + '/.info/connected');
     isConnected.on('value', function(snapshot){
       if (snapshot.val()){
-        let userRef = new Firebase(config.firebase + '/profiles/' + uid + '/online');
-        userRef.onDisconnect(function(){
-          this.toast("You've logged out.");
-          userRef.set(Firebase.ServerValue.TIMESTAMP);
-        }.bind(this));
+        let userRef = new Firebase(config.firebase + '/users/' + uid + '/online');
+        userRef.onDisconnect().set(Firebase.ServerValue.TIMESTAMP);
         userRef.set(true);
       }
     });

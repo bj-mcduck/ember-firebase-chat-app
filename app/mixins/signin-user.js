@@ -1,6 +1,9 @@
 import Ember from 'ember';
+const {
+  Mixin
+} = Ember;
 
-export default Ember.Mixin.create({
+export default Mixin.create({
   authenticateUser(email, password){
     this.get('session').authenticate('authenticator:firebase', {
       'email': email,
