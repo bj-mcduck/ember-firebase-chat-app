@@ -10,7 +10,7 @@
       {{#paper-list}}
           {{#paper-item action='goTo' param='chat'}}Chat{{/paper-item}}
           {{#paper-item action='goTo' param='users'}}Users{{/paper-item}}
-        {{#if session.isAuthenticated}}
+        {{#if currentUser}}
           {{#paper-item action='invalidateSession'}}Log Out{{/paper-item}}
         {{else}}
           {{#paper-item action='goTo' param='signup'}}Sign Up{{/paper-item}}
