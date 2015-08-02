@@ -1,8 +1,11 @@
 import Ember from 'ember';
 import config from 'ember-firebase-chat-app/config/environment';
-import LoginUser from 'ember-firebase-chat-app/mixins/login-user';
+import LoginUser from 'ember-firebase-chat-app/mixins/signin-user';
+const {
+  Controller
+} = Ember;
 
-export default Ember.Controller.extend(
+export default Controller.extend(
   LoginUser, {
 
   avatars: [
@@ -33,14 +36,11 @@ export default Ember.Controller.extend(
 
   actions: {
     signup(){
-      if (this.get('name') === undefined) {
-        return;
-      }
-      var firebase = new Firebase(config.firebase);
+      if (this.get('name') === undefined) {return;}
+      const firebase = new Firebase(config.firebase);
       firebase.createUser(this.userValues(), function(error, userData){
         if (error) {
           //Handle Errors here.
-          console.log(error);
         } else {
           this.store.createRecord('user', {
             id: userData.uid,
