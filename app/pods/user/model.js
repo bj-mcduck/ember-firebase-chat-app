@@ -1,9 +1,14 @@
 import DS from 'ember-data';
-const {attr, hasMany, Model} = DS;
+const {
+  attr,
+  hasMany,
+  Model
+} = DS;
 
 export default Model.extend({
-  name: attr('string'),
-  avatar:   attr('string'),
+  avatar: attr('string'),
+  name:   attr('string'),
+  online: attr('string'),
 
   messages: hasMany('message', {
     inverse: 'user',
