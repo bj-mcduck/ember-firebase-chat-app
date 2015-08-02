@@ -11,7 +11,7 @@ export default Controller.extend({
     if (uid !== undefined) {
       this.setUpPresenceCheck(uid);
       this.toast("You've logged in.");
-      return this.store.findRecord('users', uid);
+      return this.store.findRecord('user', uid);
     } else {
       return null;
     }
