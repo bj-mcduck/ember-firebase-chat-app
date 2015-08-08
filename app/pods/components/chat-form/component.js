@@ -19,11 +19,11 @@ export default Component.extend({
   }),
 
   didInsertElement(){
-    this.$('input').on('keypress', function(e){
+    this.$('input').on('keypress', (e) => {
       if (e.which === 13) {
         this.submitMessage();
       }
-    }.bind(this));
+    });
   },
 
   willDestroyElement(){

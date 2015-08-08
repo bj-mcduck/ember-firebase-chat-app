@@ -4,12 +4,12 @@ const {
 } = Ember;
 
 export default Mixin.create({
-  authenticateUser(email, password){
+  authenticateUser(email, password) {
     this.get('session').authenticate('authenticator:firebase', {
       'email': email,
       'password': password
-    }).then(function() {
+    }).then( () => {
       this.transitionToRoute('index');
-    }.bind(this));
+    });
   }
 });

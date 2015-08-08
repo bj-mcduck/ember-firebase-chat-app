@@ -38,7 +38,7 @@ export default Controller.extend(
     signup(){
       if (this.get('name') === undefined) {return;}
       const firebase = new Firebase(config.firebase);
-      firebase.createUser(this.userValues(), function(error, userData){
+      firebase.createUser(this.userValues(), (error, userData) => {
         if (error) {
           //Handle Errors here.
         } else {
@@ -49,7 +49,7 @@ export default Controller.extend(
           }).save();
           this.authenticateUser(this.get('email'), this.get('password'));
         }
-      }.bind(this));
+      });
     }
   }
 });
