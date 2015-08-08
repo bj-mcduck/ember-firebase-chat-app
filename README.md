@@ -1,9 +1,11 @@
-# Ember-firebase-chat-app
+# ember-firebase-chat-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Howdy! This is an example app that showcases using [Ember CLI](http://www.ember-cli.com/), [Firebase](https://www.firebase.com/), [emberfire](https://github.com/firebase/emberfire), [ember-simple-auth](https://github.com/simplabs/ember-simple-auth), [ember-cli-simple-auth-firebase](https://github.com/jamesdixon/ember-cli-simple-auth-firebase), and [ember-paper](https://github.com/miguelcobain/ember-paper).
+
+...so far. :)
 
 ## Prerequisites
+
 
 You will need the following things properly installed on your computer.
 
@@ -12,11 +14,12 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* Firebase Tools, `npm install -g firebase-tools`
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone git@github.com:brandonjmckay/ember-firebase-chat-app.git`
+* `cd ember-firebase-chat-app`
 * `npm install`
 * `bower install`
 
@@ -25,29 +28,6 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+* There are no tests yet.
