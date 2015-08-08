@@ -1,11 +1,17 @@
 # ember-firebase-chat-app
 
-Howdy! This is an example app that showcases using [Ember CLI](http://www.ember-cli.com/), [Firebase](https://www.firebase.com/), [emberfire](https://github.com/firebase/emberfire), [ember-simple-auth](https://github.com/simplabs/ember-simple-auth), [ember-cli-simple-auth-firebase](https://github.com/jamesdixon/ember-cli-simple-auth-firebase), and [ember-paper](https://github.com/miguelcobain/ember-paper).
+Howdy! This is an example app that showcases using:
 
-...so far. :)
+- Ember 1.13.6
+- Ember Data 1.0.0-beta.18
+- [Ember CLI](http://www.ember-cli.com/)
+- [Firebase](https://www.firebase.com/)
+- [emberfire](https://github.com/firebase/emberfire) 1.4.7
+- [ember-simple-auth](https://github.com/simplabs/ember-simple-auth)
+- [ember-cli-simple-auth-firebase](https://github.com/jamesdixon/ember-cli-simple-auth-firebase)
+- [ember-paper](https://github.com/miguelcobain/ember-paper)
 
 ## Prerequisites
-
 
 You will need the following things properly installed on your computer.
 
