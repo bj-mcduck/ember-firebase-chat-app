@@ -8,14 +8,22 @@ export default Controller.extend(
     avatars: [
       'buster.jpg',
       'buster2.jpg',
+      'franklyn.jpg',
+      'gangie.jpg',
       'george-michael.jpg',
       'george-michael2.jpg',
       'george.jpg',
+      'gob1.jpg',
       'gob3.jpg',
       'lindsay.jpg',
+      'lucille.jpg',
       'maeby.png',
       'michael.jpg',
-      'michael2.png'
+      'michael2.png',
+      'tobias.jpg',
+      'tobias2.jpg',
+      'tobias3.jpg',
+      'tobias4.jpg'
     ],
 
     userValues(){

@@ -15,6 +15,7 @@ Howdy! This is an example app that showcases using:
 ## Slides, and Video
 
 - I'll post here when I can get slides, and/or video of my talk up
+- Check out a [live demo of the app](https://ember-firebase-chat.firebaseapp.com)
 
 ## Prerequisites
 
