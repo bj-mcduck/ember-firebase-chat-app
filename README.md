@@ -14,7 +14,7 @@ Howdy! This is an example app that showcases using:
 ## The App, Videos, Slides, etc.
 
 - [Check out a live demo of the app](https://ember-firebase-chat.firebaseapp.com)
-- [Chapter 1: Knowing EXACTLY when someone is online ...at all times](https://www.youtube.com/watch?v=6QTM9fbmbxM&feature=youtu.be) _(A Real Easy User Presence System)_
+- [Chapter 1: Knowing EXACTLY when someone is online ...at all times](https://www.youtube.com/watch?v=6QTM9fbmbxM) _(A Real Easy User Presence System)_
 
 ## Helpful Links
 
