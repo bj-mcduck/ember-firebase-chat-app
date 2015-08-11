@@ -11,6 +11,11 @@ Howdy! This is an example app that showcases using:
 - [ember-cli-simple-auth-firebase](https://github.com/jamesdixon/ember-cli-simple-auth-firebase)
 - [ember-paper](https://github.com/miguelcobain/ember-paper)
 
+
+## Slides, and Video
+
+- I'll post here when I can get slides, and/or video of my talk up
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -33,7 +38,3 @@ You will need the following things properly installed on your computer.
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Running Tests
-
-* There are no tests yet.
