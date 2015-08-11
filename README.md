@@ -11,11 +11,14 @@ Howdy! This is an example app that showcases using:
 - [ember-cli-simple-auth-firebase](https://github.com/jamesdixon/ember-cli-simple-auth-firebase)
 - [ember-paper](https://github.com/miguelcobain/ember-paper)
 
-
 ## Slides, and Video
 
 - I'll post here when I can get slides, and/or video of my talk up
 - Check out a [live demo of the app](https://ember-firebase-chat.firebaseapp.com)
+
+## Helpful Links
+
+- You can view the [Official Ember JS StyleGuide](https://github.com/emberjs/ember.js/blob/master/STYLEGUIDE.md), and the [Dockyard Style guide](https://github.com/dockyard/styleguides/blob/master/ember.md) for some great examples of how to clean up your JS.
 
 ## Prerequisites
 
